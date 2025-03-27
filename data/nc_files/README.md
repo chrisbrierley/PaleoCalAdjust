@@ -6,13 +6,13 @@ Example CMIP/PMIP-formatted netCDF source files (and resulting month-length adju
 [[https://www.dropbox.com/sh/hromb9qagzqk9kl/AAAcItqBRJzTnjW5VhjkSMOOa?dl=0]](https://www.dropbox.com/sh/hromb9qagzqk9kl/AAAcItqBRJzTnjW5VhjkSMOOa?dl=0)**
 
 **Globus:  
-[[https://app.globus.org/file-manager?origin_id=eb8ed828-b1c2-11eb-866b-d16fa0cfc9e7&origin_path=%2F]](https://app.globus.org/file-manager?origin_id=eb8ed828-b1c2-11eb-866b-d16fa0cfc9e7&origin_path=%2F)**
+[[https://app.globus.org/file-manager?origin_id=87a6ffc8-3298-11ec-95e8-853490a236f9&origin_path=%2FVolumes%2FLaCie-12big-T3%2FSharedData%2FPaleoCalAdj%2F]](https://app.globus.org/file-manager?origin_id=87a6ffc8-3298-11ec-95e8-853490a236f9&origin_path=%2FVolumes%2FLaCie-12big-T3%2FSharedData%2FPaleoCalAdj%2F)**
 
 ### Example source and adjusted CMIP5/PMIP3 and CMIP6/PMIP4 netCDF files ###
 
 There are three sets of folders that contain model output for the *midHolocene* experiment that can be used to demonstrate `cal_adjust.f90`:  `/data/nc_files/test1/`, `/data/nc_files/test2/`, and `/data/nc_files/test3/` each of which contains a `source` and `adjusted` folder.  In addition, the folder `/data/nc_files/ctrl_nc_files/` contains *piControl* simulations that can be used to illustrate the impact of the calendar effect on long-term mean differences.
 
-- `/data/nc_files/test1/` contains some typical CMIP5/PMIP3 netCDF files, including long-term means (`Aclim`) files, monthly time series (`Amon` files), and daily time series (`day`) files):
+- `/data/nc_files/test1/source/` contains some typical CMIP5/PMIP3 netCDF files, including long-term means (`Aclim`) files, monthly time series (`Amon` files), and daily time series (`day`) files):
 	
 		tas_Amon_MPI-ESM-P_midHolocene_r1i1p1_185001-194912.nc
 		tas_Amon_IPSL-CM6A-LR_midHolocene_r1i1p1f1_gr_185001-204912.nc
@@ -29,7 +29,7 @@ There are three sets of folders that contain model output for the *midHolocene* 
 		pr_Amon_CCSM4_midHolocene_r1i1p1_100001-130012.nc
 		pr_Aclim_CCSM4_midHolocene_r1i1p1_100001-130012-clim.nc
 
-- `/data/nc_files/test2/` contains contains a variety of CMIP5/PMIP3 and CMIP6/PMIP4 3-D and 4-D files, including some on rotated-pole ocean grids:
+- `/data/nc_files/test2/source/` contains contains a variety of CMIP5/PMIP3 and CMIP6/PMIP4 3-D and 4-D files, including some on rotated-pole ocean grids:
 
 		tas_Amon_MPI-ESM-P_midHolocene_r1i1p1_185001-194912.nc
 		tas_Amon_CCSM4_midHolocene_r1i1p1_100001-130012.nc
@@ -47,7 +47,7 @@ There are three sets of folders that contain model output for the *midHolocene* 
 		msftmyz_Oclim_MPI-ESM-P_midHolocene_r1i1p1_185001-194912-clim.nc
 		msftmyz_Oclim_CCSM4_midHolocene_r1i1p1_100001-130012-clim.nc
 
-- `/data/nc_files/test3/` contains additional files that show the impact of the calendar effect on a range of other variables:
+- `/data/nc_files/test3/source/` contains additional files that show the impact of the calendar effect on a range of other variables:
 
 		clt_Aclim_CCSM4_midHolocene_r1i1p1_100001-130012-clim.nc
 		hfls_Aclim_CCSM4_midHolocene_r1i1p1_100001-130012-clim.nc
